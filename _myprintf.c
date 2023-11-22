@@ -38,7 +38,6 @@ int _printf(const char *format, ...)
 		}
 		format++;
 	}
-	_putchar('\0');
 	va_end(mylist);
 	return (count);
 }

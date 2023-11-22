@@ -23,5 +23,7 @@ int print_string(va_list type_list);
 int print_percent(va_list type_list);
 int print_decimal(va_list mylist);
 int print_integer(va_list mylist);
+int length(int number);
+int power(int a, int b);
 
 #endif

@@ -24,24 +24,22 @@ int _printf(const char *format, ...)
 	va_start(mylist, format);
 	while (*format != '\0')
 	{
-		if (*format != '%')
+		if (*format == '%')
 		{
-			_putchar(*format);
-			count++;
-			format++;
-		}
-		else
-		{
-			format++;
 			i = 0;
 			while (check[i].type != '\0')
 			{
-				if (*format == check[i].type)
+				if (*(format + 1) == check[i].type)
 					count += check[i].f(mylist);
 				i++;
 			}
-			format++;
 		}
+		if ((*format != '%') || (*format == '%' && check[i].type == '\0'))
+		{
+			_putchar(*format);
+			count++;
+		}
+		format++;
 	}
 	va_end(mylist);
 	return (count);

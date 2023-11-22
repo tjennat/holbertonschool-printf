@@ -22,7 +22,13 @@ int _printf(const char *format, ...)
 	{
 		if (*format != '%')
 		{
-			_putchar(*format);
+			if (*format == '\\' && *(format + 1) == 'n')
+			{
+				_putchar('\n');
+				format++;
+			}
+			else
+				_putchar(*format);
 			count++;
 		}
 		else

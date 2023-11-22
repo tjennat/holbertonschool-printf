@@ -48,8 +48,9 @@ int power(int a, int b)
 
 int print_decimal(va_list mylist)
 {
+	unsigned int abs;
 	int number = va_arg(mylist, int);
-	int aff_char = 0;
+	int aff_char = 0, count = 0;
 	int longueur = length(number);
 
 	if (number > 0)
@@ -57,26 +58,23 @@ int print_decimal(va_list mylist)
 		while (longueur > 0)
 		{
 			aff_char = (number / power(10, longueur - 1)) % 10;
-			_putchar('0' + aff_char);
+			count += _putchar('0' + aff_char);
 			longueur--;
 		}
 	}
 	else if (number < 0)
 	{
-		_putchar('-');
-		number *= (-1);
+		count = _putchar('-');
+		abs = number * (-1);
 		while (longueur > 0)
 		{
-			aff_char = (number / power(10, longueur - 1)) % 10;
-			_putchar('0' + aff_char);
+			aff_char = (abs / power(10, longueur - 1)) % 10;
+			count += _putchar('0' + aff_char);
 			longueur--;
 		}
 	}
 	else if (number == 0)
-	{
-		_putchar('0');
-		return (1);
-	}
-	return (length(number));
+		count = _putchar('0');
+	return (count);
 }
 

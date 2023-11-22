@@ -32,7 +32,7 @@ int print_integer(va_list mylist)
 			longueur--;
 		}
 	}
-	else
+	else if (number == 0)
 	{
 		_putchar('0');
 		return (1);

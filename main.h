@@ -5,7 +5,11 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-
+/**
+ * struct type - type used on printf
+ * @type: is the type can be char, string or percent
+ * @f: is the pointer to the function that gonna recognize type
+ */
 typedef struct type
 {
 	char type;

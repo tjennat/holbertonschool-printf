@@ -11,15 +11,11 @@ int _printf(const char *format, ...)
 	va_list mylist;
 	int i, count = 0;
 	print_type check[] = {
-		{'c', print_char},
-		{'s', print_string},
-		{'%', print_percent},
-		{'d', print_decimal},
-		{'i', print_integer},
-		{'\0', NULL}
-	};
+		{'c', print_char}, {'s', print_string},
+		{'%', print_percent}, {'d', print_decimal},
+		{'i', print_integer}, {'\0', NULL}};
 
-	if (format == NULL)
+	if ((format == NULL) || (format = ""))
 		return (-1);
 	va_start(mylist, format);
 	while (*format != '\0')

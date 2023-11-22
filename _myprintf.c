@@ -15,17 +15,14 @@ int _printf(const char *format, ...)
 		{'%', print_percent}, {'d', print_decimal},
 		{'i', print_integer}, {'\0', NULL}};
 
-	if (format == NULL)
+	if (format == NULL && *format == '\0')
 		return (-1);
 	va_start(mylist, format);
 	while (format != NULL && *format != '\0')
 	{
 		if (*format != '%')
-		{
-			_putchar(*format);
-			count++;
-		}
-		else
+			count += _putchar(*format);
+		else if (*format == '%')
 		{
 			format++;
 			i = 0;

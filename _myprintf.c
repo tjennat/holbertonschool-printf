@@ -15,7 +15,7 @@ int _printf(const char *format, ...)
 		{'%', print_percent}, {'d', print_decimal},
 		{'i', print_integer}, {'\0', NULL}};
 
-	if (format == NULL && strcmp(format, "") == 0)
+	if (format == NULL)
 		return (-1);
 	va_start(mylist, format);
 	while (*format != '\0')

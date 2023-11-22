@@ -48,7 +48,7 @@ int power(int a, int b)
 
 int print_decimal(va_list mylist)
 {
-	long int number = va_arg(mylist, int);
+	int number = va_arg(mylist, int);
 	int aff_char = 0;
 	int longueur = length(number);
 

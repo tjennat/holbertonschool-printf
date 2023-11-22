@@ -15,7 +15,6 @@ int _printf(const char *format, ...)
 		{'s', print_string},
 		{'%', print_percent},
 		{'d', print_decimal},
-		{'i', print_integer},
 		{'\0', NULL}
 	};
 
@@ -30,15 +29,16 @@ int _printf(const char *format, ...)
 			while (check[i].type != '\0')
 			{
 				if (*(format + 1) == check[i].type)
+				{
 					count += check[i].f(mylist);
+					format += 2;
+					break;
+				}
 				i++;
 			}
 		}
-		if ((*format != '%') || (*format == '%' && check[i].type == '\0'))
-		{
-			_putchar(*format);
-			count++;
-		}
+		_putchar(*format);
+		count++;
 		format++;
 	}
 	va_end(mylist);

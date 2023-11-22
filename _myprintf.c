@@ -22,11 +22,8 @@ int _printf(const char *format, ...)
 	{
 		if (*format != '%')
 		{
-			if (*format == '\\')
-				format++;
 			_putchar(*format);
 			count++;
-			format++;
 		}
 		else
 		{
@@ -38,8 +35,8 @@ int _printf(const char *format, ...)
 					count += check[i].f(mylist);
 				i++;
 			}
-			format++;
 		}
+		format++;
 	}
 	va_end(mylist);
 	return (count);

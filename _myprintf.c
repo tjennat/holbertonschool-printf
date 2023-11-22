@@ -27,6 +27,8 @@ int _printf(const char *format, ...)
 		else if (*format == '%')
 		{
 			format++;
+			if (!*(format))
+				return (-1);
 			for (i = 0; check[i].type != '\0'; i++)
 				if (*format == check[i].type)
 					count += check[i].f(mylist);

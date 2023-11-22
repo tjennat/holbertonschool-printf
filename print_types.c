@@ -23,7 +23,7 @@ int print_string(va_list type_list)
 	char *string = va_arg(type_list, char *);
 
 	if (string == NULL)
-		return (0);
+		string = "(nil)";
 	for (i = 0; string[i] != '\0'; i++)
 		_putchar(string[i]);
 	return (i);

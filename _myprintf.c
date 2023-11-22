@@ -22,6 +22,8 @@ int _printf(const char *format, ...)
 	{
 		if (*format != '%')
 		{
+			if (*format == '\\')
+				format++;
 			_putchar(*format);
 			count++;
 			format++;

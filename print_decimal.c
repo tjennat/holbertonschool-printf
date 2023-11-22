@@ -73,7 +73,10 @@ int print_decimal(va_list mylist)
 		}
 	}
 	else
+	{
 		_putchar('0');
-	return (longueur);
+		return (1);
+	}
+	return (length(number));
 }
 

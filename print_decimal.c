@@ -72,7 +72,7 @@ int print_decimal(va_list mylist)
 			longueur--;
 		}
 	}
-	else
+	else if (number == 0)
 	{
 		_putchar('0');
 		return (1);

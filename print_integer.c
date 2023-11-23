@@ -8,35 +8,5 @@
 
 int print_integer(va_list mylist)
 {
-	int number = va_arg(mylist, int);
-	int aff_char = 0;
-	int longueur = length(number);
-
-	if (number > 0)
-	{
-		while (longueur > 0)
-		{
-			aff_char = (number / power(10, longueur - 1)) % 10;
-			_putchar('0' + aff_char);
-			longueur--;
-		}
-	}
-	else if (number < 0)
-	{
-		_putchar('-');
-		number *= (-1);
-		while (longueur > 0)
-		{
-			aff_char = (number / power(10, longueur - 1)) % 10;
-			_putchar('0' + aff_char);
-			longueur--;
-		}
-	}
-	else if (number == 0)
-	{
-		_putchar('0');
-		return (1);
-	}
-	return (length(number));
+	return (print_decimal(mylist));
 }
-

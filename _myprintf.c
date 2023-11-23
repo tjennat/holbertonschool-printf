@@ -32,6 +32,12 @@ int _printf(const char *format, ...)
 			for (i = 0; check[i].type != '\0'; i++)
 				if (*format == check[i].type)
 					count += check[i].f(mylist);
+			if (check[i].type == '\0')
+			{
+				_putchar('%');
+				_putchar(*format);
+				count += 2;
+			}
 		}
 		format++;
 	}

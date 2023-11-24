@@ -40,5 +40,9 @@ int print_unsigned(va_list type_list);
 int print_octal(va_list type_list);
 int print_min_hexa(va_list type_list);
 int print_maj_hexa(va_list type_list);
+int print_decimal(va_list mylist);
+int print_integer(va_list mylist);
+int length(int number);
+int power(int a, int b);
 
 #endif

@@ -12,8 +12,8 @@ int _printf(const char *format, ...)
 	int i, count = 0;
 	print_type check[] = {
 		{'c', print_char}, {'s', print_string},
-		{'%', print_percent}, {'d', print_decimal},
-		{'i', print_integer}, {'\0', NULL}};
+		{'%', print_percent}, {'d', print_decimal}, {'o', print_octal},
+		{'i', print_integer}, {'u', print_unsigned}, {'\0', NULL}};
 
 	if (format == NULL)
 		return (-1);

@@ -16,11 +16,16 @@ typedef struct type
 	int (*f)(va_list type_list);
 } print_type;
 
+int power(int a, int b);
+int length(int number);
 int _putchar(char c);
 int _printf(const char *format, ...);
 int print_char(va_list type_list);
 int print_string(va_list type_list);
 int print_percent(va_list type_list);
+int print_decimal(va_list type_list);
+int print_unsigned(va_list type_list);
+int print_octal(va_list type_list);
 int print_decimal(va_list mylist);
 int print_integer(va_list mylist);
 int length(int number);

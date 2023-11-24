@@ -11,9 +11,10 @@ int _printf(const char *format, ...)
 	va_list mylist;
 	int i, count = 0;
 	print_type check[] = {
-		{'c', print_char}, {'s', print_string},
+		{'c', print_char}, {'s', print_string}, {'x', print_min_hexa},
 		{'%', print_percent}, {'d', print_decimal}, {'o', print_octal},
-		{'i', print_integer}, {'u', print_unsigned}, {'\0', NULL}};
+		{'X', print_maj_hexa}, {'i', print_integer},
+		{'u', print_unsigned}, {'\0', NULL}};
 
 	if (format == NULL)
 		return (-1);
@@ -36,11 +37,7 @@ int _printf(const char *format, ...)
 					break;
 				}
 			if (check[i].type == '\0')
-			{
-				_putchar('%');
-				_putchar(*format);
-				count += 2;
-			}
+				count += _putchar('%') + _putchar(*format);
 		}
 		format++;
 	}

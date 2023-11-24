@@ -5,7 +5,11 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-
+/**
+ * struct type - type used on printf
+ * @type: is the type can be char, string or percent
+ * @f: is the pointer to the function that gonna recognize type
+ */
 typedef struct type
 {
 	char type;
@@ -22,5 +26,9 @@ int print_percent(va_list type_list);
 int print_decimal(va_list type_list);
 int print_unsigned(va_list type_list);
 int print_octal(va_list type_list);
+int print_decimal(va_list mylist);
+int print_integer(va_list mylist);
+int length(int number);
+int power(int a, int b);
 
 #endif

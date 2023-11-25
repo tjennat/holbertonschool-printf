@@ -1,11 +1,10 @@
-C - printf :fire:
-=================
+C - printf
+==========
 
 ## Table of contents
 * [Description of the project](#description-of-the-project)
 * [What is prinf](#what-is-printf)
-* [Prerequisites](#prerequisites)
-* [Compilation](#compilation)
+* [Usage](#usage)
 * [Requirements](#requirement)
 * [Authors](#authors)
 
@@ -24,16 +23,20 @@ Each format have a different meaning : :arrow_heading_down:
 * %d : to print a decimal number
 * %i : to print an integer in base 10
 
-## Prerequisites
+## Usage
 
-*  
-
-## Compilation
-
-* Our code will be compiled this way:
+* Prints a string to the standard output, according to a given format
+* All files were created and compiled on Ubuntu 14.04.4 LTS using GCC 4.8.4 with the command
 ```
 $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 ```
+* Returns the number of characters in the output string on success, -1 otherwise
+* Call it this way: `_printf("format string", arguments...)` where `format string` can contain conversion specifiers, along with regular characters
+
+## Examples
+
+
+
 ## Requirements
 
 * Allowed editors : vi, vim, emacs -> we use vi here
@@ -49,6 +52,3 @@ $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
 <img src="https://blog.holbertonschool.com/wp-content/uploads/2019/04/instagram_feed180.jpg" alt="Logo Holberton School"
 width="200" height="200"/>
-
-this is going to be the repositery for printf by Rodrigue and Théo
-

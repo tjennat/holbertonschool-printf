@@ -5,6 +5,8 @@ C - printf
 * [Description of the project](#description-of-the-project)
 * [What is prinf](#what-is-printf)
 * [Usage](#usage)
+* [Flowcharts](#Flowcharts)
+* [Usage](#usage)
 * [Requirements](#requirement)
 * [Authors](#authors)
 
@@ -33,9 +35,18 @@ $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 * Returns the number of characters in the output string on success, -1 otherwise
 * Call it this way: `_printf("format string", arguments...)` where `format string` can contain conversion specifiers, along with regular characters
 
+## Flowcharts
+
+In this section you will find flowcharts that will popularize our codes.
+
+**Flowchart for structure and printf function**
+[Imgur](https://i.imgur.com/jDftLO8.png)
+**Flowchart for print types (char,string and percent)**
+[Imgur](https://i.imgur.com/pIPvAEE.png)
+**Flowchart for decimal and integer**
+[Imgur](https://i.imgur.com/PpjI7k4.png)
+
 ## Examples
-
-
 
 ## Requirements
 

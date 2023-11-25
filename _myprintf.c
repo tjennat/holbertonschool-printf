@@ -5,16 +5,10 @@
  * @format: a list of types of arguments passed to the function
  * Return: the number of characters printed
  */
-
 int _printf(const char *format, ...)
 {
 	va_list mylist;
-	int i, count = 0;
-	print_type check[] = {
-		{'c', print_char}, {'s', print_string}, {'x', print_min_hexa},
-		{'%', print_percent}, {'d', print_decimal}, {'o', print_octal},
-		{'X', print_maj_hexa}, {'i', print_integer},
-		{'u', print_unsigned}, {'\0', NULL}};
+	int count = 0;
 
 	if (format == NULL)
 		return (-1);
@@ -30,14 +24,7 @@ int _printf(const char *format, ...)
 			format++;
 			if (!*(format))
 				return (-1);
-			for (i = 0; check[i].type != '\0'; i++)
-				if (*format == check[i].type)
-				{
-					count += check[i].f(mylist);
-					break;
-				}
-			if (check[i].type == '\0')
-				count += _putchar('%') + _putchar(*format);
+			count += search_type(*format, mylist);
 		}
 		format++;
 	}

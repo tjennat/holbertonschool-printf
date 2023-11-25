@@ -44,5 +44,6 @@ int print_decimal(va_list mylist);
 int print_integer(va_list mylist);
 int length(int number);
 int power(int a, int b);
+int search_type(char format, va_list mylist);
 
 #endif

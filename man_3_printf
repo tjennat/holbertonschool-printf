@@ -1,0 +1,68 @@
+.TH _PRINTF 3 "November 2023" "Version 1.0" "_printf Manual"
+
+.SH NAME
+\_printf - Custom printf implementation
+
+.SH SYNOPSIS
+.B #include <main.h>
+
+.PP
+.B int _printf(const char *format, ...);
+
+.SH DESCRIPTION
+The \fB_printf\fP function produces output according to a format string. The format string can include the following conversion specifiers:
+.TP
+\fB%c\fP - Print a character.
+.TP
+\fB%s\fP - Print a string.
+.TP
+\fB%%\fP - Print a percent sign.
+.TP
+\fB%d\fP - Print a decimal integer.
+.TP
+\fB%i\fP - Print an integer.
+
+.PP
+Flags:
+.TP
+\fB-\fP - Left-align the output.
+.TP
+\fB0\fP - Pad with zeros instead of spaces.
+
+.PP
+Field Width:
+.TP
+\fB<number>\fP - Minimum number of characters to be printed.
+
+.PP
+Precision:
+.TP
+\fB.\fP\fB<number>\fP - For integers, minimum number of digits to be printed.
+
+.PP
+Length Modifier:
+.TP
+\fBl\fP - Use \fBlong\fP for \fB%d\fP and \fBi\fP specifiers.
+
+.SH RETURN VALUE
+The function returns the number of characters printed.
+
+.SH EXAMPLES
+Print a character:
+.BR _printf("The character is: %c", 'A');
+
+Print a string:
+.BR _printf("Hello, %s", "world");
+
+Print a percent sign:
+.BR _printf("100%% complete");
+
+Print a decimal integer:
+.BR _printf("The number is: %d", 42);
+
+Print an integer:
+.BR _printf("The integer is: %i", -123);
+
+.SH DATE
+November 2023
+

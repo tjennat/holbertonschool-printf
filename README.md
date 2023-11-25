@@ -39,12 +39,14 @@ $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
 In this section you will find flowcharts that will popularize our codes.
 
-**Flowchart for structure and printf function**
-[Imgur](https://i.imgur.com/jDftLO8.png)
-**Flowchart for print types (char,string and percent)**
-[Imgur](https://i.imgur.com/pIPvAEE.png)
-**Flowchart for decimal and integer**
-[Imgur](https://i.imgur.com/PpjI7k4.png)
+Flowchart for structure and printf function
+[Structure and printf](Flowcharts/MAIN.H + PRINTF.png)
+
+Flowchart for print types (char,string and percent)
+[Types of function](Flowcharts/TYPES OF FUNCTIONS.png)
+
+Flowchart for decimal and integer
+![Decimal and integer](Flowcharts/DECIMAL AND INT.png)
 
 ## Examples
 

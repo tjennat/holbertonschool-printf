@@ -4,6 +4,7 @@ C - printf :fire:
 ## Table of contents
 * [Description of the project](#description-of-the-project)
 * [What is prinf](#what-is-printf)
+* [Flowcharts](#Flowcharts)
 * [Prerequisites](#prerequisites)
 * [Compilation](#compilation)
 * [Requirements](#requirement)
@@ -23,6 +24,17 @@ Each format have a different meaning : :arrow_heading_down:
 * %% : just to print a percent
 * %d : to print a decimal number
 * %i : to print an integer in base 10
+
+## Flowcharts
+
+In this section you will find flowcharts that will popularize our codes.
+
+**Flowchart for structure and printf function**
+[Imgur](https://i.imgur.com/jDftLO8.png)
+**Flowchart for print types (char,string and percent)**
+[Imgur](https://i.imgur.com/pIPvAEE.png)
+**Flowchart for decimal and integer**
+[Imgur](https://i.imgur.com/PpjI7k4.png)
 
 ## Prerequisites
 

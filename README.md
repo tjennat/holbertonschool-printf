@@ -28,7 +28,7 @@ Each format have a different meaning : :arrow_heading_down:
 ## Compilation
 
 * Prints a string to the standard output, according to a given format
-* All files were created and compiled on Ubuntu 20.04 using GCC 4.8.4 with the command
+* All files were created and compiled on Ubuntu 20.04 using GCC 9.4.0 with the command
 ```
 $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 ```

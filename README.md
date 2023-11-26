@@ -54,6 +54,54 @@ Flowchart for decimal and integer
 
 <img src="Flowcharts/DECIMAL AND INT.png" alt="Decimal and integer" width="300"/>
 
+
+# \_printf - Custom printf implementation
+
+**SYNOPSIS**
+
+```c
+#include <main.h>
+
+int _printf(const char *format, ...);
+DESCRIPTION
+The _printf function produces output according to a format string. The format string can include the following conversion specifiers:
+
+%c - Print a character.
+%s - Print a string.
+%% - Print a percent sign.
+%d - Print a decimal integer.
+%i - Print an integer.
+Flags:
+- - Left-align the output.
+0 - Pad with zeros instead of spaces.
+Field Width:
+<number> - Minimum number of characters to be printed.
+Precision:
+.<number> - For integers, minimum number of digits to be printed.
+Length Modifier:
+l - Use long for %d and %i specifiers.
+RETURN VALUE
+The function returns the number of characters printed.
+
+EXAMPLES
+Print a character:
+_printf("The character is: %c", 'A');
+
+Print a string:
+_printf("Hello, %s", "world");
+
+Print a percent sign:
+_printf("100%% complete");
+
+Print a decimal integer:
+_printf("The number is: %d", 42);
+
+Print an integer:
+_printf("The integer is: %i", -123);
+
+DATE
+November 2023
+
 ## Examples
 
 ## Requirements

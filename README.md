@@ -45,7 +45,7 @@ $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
 ## Examples
 
-Function _printf:
+### Function _printf:
 
 ```c
 #include <stdio.h>
@@ -61,7 +61,7 @@ int main()
 }
 ```
 
-STDOUT :
+### STDOUT :
 
 ```c
 Hello, World!

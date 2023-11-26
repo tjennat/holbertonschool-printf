@@ -55,7 +55,7 @@ Flowchart for decimal and integer
 <img src="Flowcharts/DECIMAL AND INT.png" alt="Decimal and integer" width="300"/>
 
 
-# \_printf - Custom printf implementation
+# \MAN PAGE PRINTF
 
 **SYNOPSIS**
 
@@ -101,6 +101,7 @@ _printf("The integer is: %i", -123);
 
 DATE
 November 2023
+```
 
 ## Examples
 
